@@ -7,39 +7,8 @@ class Square():
 
     def __init__(self, width=0, height=0):
         '''init function to happen every time obj instantiated'''
-        self.__width = width
-        self.__height = height
-
-    @property
-    def width(self):
-        '''width getter'''
-        return self.__width
-
-    @property
-    def width(self):
-        '''width getter'''
-        return self.__height
-
-   @width.setter
-    def width(self, v):
-        '''width setter'''
-        if v < 1:
-            raise('width must be greater that 0')
-        elif type(v) not int:
-            raise('width must be an integer')
-        else:
-            self.__width = v
-
-   @height.setter
-    def height(self, v):
-    '''height setter'''
-        if v < 1:
-            raise('height must be greater that 0')
-        elif type(v) not int:
-            raise('height must be an integer')
-        else:
-            self.__height = v
-
+        self.width = width
+        self.height = height
 
     def area_of_my_square(self):
         """ Area of the square """
